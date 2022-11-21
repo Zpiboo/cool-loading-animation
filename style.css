@@ -20,6 +20,9 @@ body {
 
   width: 200px;
   aspect-ratio: 1;
+
+  --transform: ;
+  animation: rotate 10s linear infinite;
 }
 
 
@@ -73,13 +76,11 @@ body {
 }
 
 
-@-webkit-keyframes rotate {
-  to {
-    transform: var(--transform)
-               rotate(1turn);
-  }
-}
 @keyframes rotate {
+  from {
+    transform: var(--transform)
+               rotate(0turn);
+  }
   to {
     transform: var(--transform)
                rotate(1turn);
